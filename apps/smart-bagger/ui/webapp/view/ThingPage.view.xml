@@ -1,0 +1,113 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:iot="sap.ui.iot.controls" xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns:suite="sap.suite.ui.commons" xmlns="sap.uxap" xmlns:semantic="sap.m.semantic" xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:viz="sap.viz.ui5.controls" xmlns:iotele="sap.ui.iot.elements" xmlns:businesscontrol="sap.smartbusiness.ui.control" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" controllerName="sap.iot.noah.smartbagger.controller.ThingPage" displayBlock="true">
+	<m:Page title="SAP Leonardo IoT" showNavButton="true" navButtonPress="handleNavBackPress">
+		<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false" showHeaderContent="true" flexEnabled="true">
+			<headerTitle>
+				<ObjectPageHeader objectTitle="{thingPageModel>/detailsData/ThingName}" objectSubtitle="{thingPageModel>/detailsData/ThingName}" objectImageAlt="{i18n>thing}" id="ObjectPageLayoutHeaderTitle" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true" showPlaceholder="true"/>
+			</headerTitle>
+			<headerContent>
+				<m:HBox id="idSemanticBarHBox" width=".5rem" height="5rem" class="objectSematicBar"/>
+				<layout:VerticalLayout>
+					<core:Icon src="sap-icon://machine" width="5rem" id="idHeaderIcon" height="5rem" size="4rem" visible="false" backgroundColor="white" color="#d3d7d9"/>
+					<m:Image id="idHeaderImage" src="{parts:[{path:'thingPageModel>/detailsData/ThingId'}], formatter:'.formatter.formatImageURLThingPage'}" alt="{i18n>noImage}" error="onImageLoadError" width="5rem" height="5rem" visible="true"/>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout>
+					<m:ObjectStatus id="objectStatusLabel3" title="Address"/>
+					<m:ObjectStatus id="objectStatusText3" text="{thingPageModel>/detailsData/ThingCommunicationData}"/>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout>
+					<m:ObjectStatus id="objectStatusLabel1" title="Device Id"/>
+					<m:ObjectStatus id="objectStatusText1" text="{thingPageModel>/detailsData/ThingId}"/>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout>
+					<m:ObjectStatus id="objectStatusLabel2" title="Device Type"/>
+					<m:ObjectStatus id="objectStatusText2" text="{thingPageModel>/detailsData/ThingType}"/>
+				</layout:VerticalLayout>
+			</headerContent>
+			<sections>
+				<ObjectPageSection title="{i18n>basicData}">
+					<subSections>
+						<ObjectPageSubSection title="{i18n>basicData}">
+							<blocks>
+								<layout:Grid defaultSpan="XL4 L4 M6 S12">
+									<layout:VerticalLayout>
+										<m:Label text="Useage Chem A (LB)"/>
+										<m:Text class="kpitext" text="{thingPageModel>/detailsData/DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data/smart_bagger_telemetry_data.sb_usage_a_chem}"/>
+									</layout:VerticalLayout>
+									<layout:VerticalLayout>
+										<m:Label text="Useage Chem B (LB)"/>
+										<m:Text class="kpitext" text="{thingPageModel>/detailsData/DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data/smart_bagger_telemetry_data.sb_usage_b_chem}"/>
+									</layout:VerticalLayout>
+										<layout:VerticalLayout>
+										<m:Label text="Useage Film (LB)"/>
+										<m:Text class="kpitext" text="{thingPageModel>/detailsData/DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data/smart_bagger_telemetry_data.sb_usage_film}"/>
+									</layout:VerticalLayout>
+								</layout:Grid>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+				<ObjectPageSection title="Measured Values">
+					<subSections>
+						<ObjectPageSubSection title="Measured Values">
+							<blocks>
+								<!--iot:IoTMeasuredValues id="idMeasuringPoints" width="calc(100% - 10px)" rowSelect="onMeasuredValueSelect" height="500px" visible="true"/-->
+								<iot:IoTChart id="idTChart" noOfHours="24" isSliderVisible="true" rememberTimeRange="false" chartHeight="500px" rememberMeasuredValues="false" displayLegend="true"/>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+				<ObjectPageSection title="Event List">
+					<subSections>
+						<ObjectPageSubSection title="Event List">
+							<blocks>
+								<iot:IoTEventList id="idEventList" height="500px" RowSelect="onEventListSelect" events="{events>/Events}">
+									<iot:columns>
+										<iotele:IoTEventListColumnHeader text="Description"/>
+										<iotele:IoTEventListColumnHeader text="External Id"/>
+										<iotele:IoTEventListColumnHeader text="Timestamp"/>
+										<iotele:IoTEventListColumnHeader text="Status"/>
+										<iotele:IoTEventListColumnHeader text="Severity"/>
+									</iot:columns>
+									<iot:events>
+										<iotele:IoTEventListElement>
+											<iotele:cells>
+												<iotele:IoTEventListColumn text="{events>Description}"/>
+												<iotele:IoTEventListColumn text="{events>ExternalId}"/>
+												<iotele:IoTEventListColumn text="{events>BusinessTimestamp}"/>
+												<iotele:IoTEventListColumn text="{events>Status}"/>
+												<iotele:IoTEventListColumn text="{events>Severity}"/>
+											</iotele:cells>
+										</iotele:IoTEventListElement>
+									</iot:events>
+								</iot:IoTEventList>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+				<ObjectPageSection title="{i18n>timeline}">
+					<subSections>
+						<ObjectPageSubSection title="{i18n>timeline}">
+							<blocks>
+								<suite:Timeline id="idTimeline" growing="false" enableScroll="false" enableDoubleSided="true" showHeaderBar="false" showSearch="false" showIcons="false" content="{thingPageModel>/eventsData}" showFilterBar="false">
+									<suite:content>
+										<suite:TimelineItem title="{thingPageModel>ExternalId}" dateTime="{parts:[{path:'thingPageModel>BusinessTimestamp'}], formatter:'.formatter.formatTimeStamp'}" userNameClickable="false" text="{thingPageModel>Description}"/>
+									</suite:content>
+								</suite:Timeline>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+				<ObjectPageSection title="{i18n>analyticsSubTitle2}">
+					<subSections>
+						<ObjectPageSubSection title="{i18n>analyticsSubTitle2}">
+							<blocks>
+								<businesscontrol:Kpi evaluationId="E.1554197418690" showAggregate="true" showFilters="false" showMiniChart="true" showChart="true"
+									showKpiTitle="false" showEvaluationTitle="false" height="700px"/>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+			</sections>
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

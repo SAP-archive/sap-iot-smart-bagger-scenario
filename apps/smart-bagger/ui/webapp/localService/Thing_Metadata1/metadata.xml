@@ -1,0 +1,394 @@
+<?xml version="1.0" ?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices m:DataServiceVersion="1.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+		xmlns:sap="http://www.sap.com/Protocols/SAPData">
+		<Schema Namespace="com.sap.appiot" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data" sap:semantics="timeseries">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_a_otp_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_a_otp_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_b_otp_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_b_otp_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_bag_delay" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_bag_delay.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_film_deploy" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_film_deploy.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_foam_drip" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_bag_seq_delay_foam_drip.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_c4s_ticket_num_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_c4s_ticket_num_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_chemical_temp" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_chemical_temp.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_cut_cpu_ver_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_cut_cpu_ver_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_drive_fault_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_drive_fault_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_home_2_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_home_2_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_home_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_home_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_photo_eye_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_disp_photo_eye_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_dispenser_photo_eye" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_dispenser_photo_eye.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_display_cpu_ver_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_display_cpu_ver_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_display_ver_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_display_ver_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_drive_fault_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_drive_fault_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_feed_at_startup" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_feed_at_startup.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_lvl_sense" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_lvl_sense.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_spindle_switch" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_spindle_switch.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_advance" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_advance.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_idle" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_idle.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_stop" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_film_tsn_stop.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_flip_door_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_flip_door_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_flip_door_switch" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_flip_door_switch.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_fill_fctr" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_fill_fctr.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_flow_rate" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_flow_rate.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_ratio_a_b" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_foam_ratio_a_b.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_drive_fault_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_drive_fault_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_photo_eyes" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_photo_eyes.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_jaw_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_left_photo_eye_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_left_photo_eye_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_main_cover_switch" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_main_cover_switch.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_main_cpu_ver_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_main_cpu_ver_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_right_photo_eye_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_right_photo_eye_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_bottom" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_bottom.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_cut_wire" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_cut_wire.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_edge" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_edge.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_top" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_seal_temp_top.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_solvent_lvl_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_solvent_lvl_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_spindle_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_spindle_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_stop_pos" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_stop_pos.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_top_cover_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_top_cover_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_vent_length" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_vent_length.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_vent_pos" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_vent_pos.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_write_request_response_r" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_configuration_data.sb_write_request_response_r.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data" sap:semantics="timeseries">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="smart_bagger_error_data.sb_actions" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_error_data.sb_actions.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_error_data.sb_error_code" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_error_data.sb_error_code.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_error_data.sb_machine_version" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_error_data.sb_machine_version.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_error_data.sb_problem" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_error_data.sb_problem.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_error_data.sb_updated" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_error_data.sb_updated.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data" sap:semantics="timeseries">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_cross_cut_wire" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_cross_cut_wire.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_fills" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_fills.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_ratio" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_ratio.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_tach" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_tach.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_tension_power" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_film_tension_power.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_flow_solvent" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_flow_solvent.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_lengths" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_lengths.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_lifetime_shot_count" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_lifetime_shot_count.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_a" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_a.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_b" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_b.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_s" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_psi_s.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_quantities" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_quantities.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_seal_bottom" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_seal_bottom.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_seal_top" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_seal_top.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sections" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sections.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sequence" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sequence.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sequence_id" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_sequence_id.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_shot_duration" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_shot_duration.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_shots_since_reset" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_shots_since_reset.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_a_pump" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_a_pump.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_b_pump" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_b_pump.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_dispenser" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_dispenser.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_jaw" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_jaw.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_spindle" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_tach_spindle.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_a_hose" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_a_hose.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_a_manifold" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_a_manifold.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_b_hose" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_b_hose.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_b_manifold" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_b_manifold.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_dispenser" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_dispenser.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_internal" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_internal.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_reference" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_temp_reference.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_time_of_shot" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_time_of_shot.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_type" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_type.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_a_chem" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_a_chem.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_b_chem" Type="Edm.Double"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_b_chem.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_film" Type="Edm.Int32"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_usage_film.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_user" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_telemetry_data.sb_user.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<EntityType Name="Thing">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false">
+					<Documentation>
+						<LongDescription>Thing unique ID</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingISOCode" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing Language code</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingDescription" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing description</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingName" Type="Edm.String" Nullable="false">
+					<Documentation>
+						<LongDescription>Thing name</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingExternalId" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing external id</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingType" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing Type ID associated with the Thing</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ObjectGroup" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Object group used to create the Thing</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="BPName" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Business partner name associated for the Thing</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="BPLandlinePhoneNumber" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Landline phone number of Business partner</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="BPMobilePhoneNumber" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Mobile phone number of Business partner</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingCustomerId" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Business partner ID associated for the Thing</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingRegionDescription" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Region where Thing is located</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingCountryDescription" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Country where the Thing is located</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingCountryId" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Country code where the Thing is located</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingCommunicationData" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing address details</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="ThingLocationId" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing location ID</LongDescription>
+					</Documentation>
+				</Property>
+				<Property Name="AlternateId" Type="Edm.String">
+					<Documentation>
+						<LongDescription>Thing AlternateId</LongDescription>
+					</Documentation>
+				</Property>
+				<NavigationProperty Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status"
+					Relationship="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status" FromRole="ThingEntities"
+					ToRole="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_statusEntities"></NavigationProperty>
+				<NavigationProperty Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data"
+					Relationship="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data" FromRole="ThingEntities"
+					ToRole="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_dataEntities"></NavigationProperty>
+				<NavigationProperty Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic" Relationship="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic"
+					FromRole="ThingEntities" ToRole="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basicEntities"></NavigationProperty>
+				<NavigationProperty Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data"
+					Relationship="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data" FromRole="ThingEntities"
+					ToRole="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_dataEntities"></NavigationProperty>
+				<NavigationProperty Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data"
+					Relationship="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data" FromRole="ThingEntities"
+					ToRole="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_dataEntities"></NavigationProperty>
+			</EntityType>
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_geo_measures" sap:semantics="timeseries">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="smart_bagger_geo_measures.latitude" Type="Edm.Decimal"></Property>
+				<Property Name="smart_bagger_geo_measures.latitude.Timestamp" Type="Edm.DateTimeOffset"></Property>
+				<Property Name="smart_bagger_geo_measures.longitude" Type="Edm.Decimal"></Property>
+				<Property Name="smart_bagger_geo_measures.longitude.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status" sap:semantics="timeseries">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="smart_bagger_ticket_status.sb_c4s_ticket_status" Type="Edm.String"></Property>
+				<Property Name="smart_bagger_ticket_status.sb_c4s_ticket_status.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<EntityType Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic">
+				<Key>
+					<PropertyRef Name="ThingId"></PropertyRef>
+				</Key>
+				<Property Name="ThingId" Type="Edm.String" Nullable="false"></Property>
+				<Property Name="basic.sb_machine_id" Type="Edm.String"></Property>
+				<Property Name="basic.sb_machine_id.Timestamp" Type="Edm.DateTimeOffset"></Property>
+			</EntityType>
+			<Association Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status">
+				<End Type="com.sap.appiot.Thing" Multiplicity="1" Role="ThingEntities"></End>
+				<End Type="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status" Multiplicity="1"
+					Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_statusEntities"></End>
+			</Association>
+			<Association Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data">
+				<End Type="com.sap.appiot.Thing" Multiplicity="1" Role="ThingEntities"></End>
+				<End Type="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data" Multiplicity="1"
+					Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_dataEntities"></End>
+			</Association>
+			<Association Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic">
+				<End Type="com.sap.appiot.Thing" Multiplicity="1" Role="ThingEntities"></End>
+				<End Type="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic" Multiplicity="1" Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basicEntities"></End>
+			</Association>
+			<Association Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data">
+				<End Type="com.sap.appiot.Thing" Multiplicity="1" Role="ThingEntities"></End>
+				<End Type="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data" Multiplicity="1"
+					Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_dataEntities"></End>
+			</Association>
+			<Association Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data">
+				<End Type="com.sap.appiot.Thing" Multiplicity="1" Role="ThingEntities"></End>
+				<End Type="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data" Multiplicity="1"
+					Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_dataEntities"></End>
+			</Association>
+			<EntityContainer Name="CompositeThingsThingType" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_datas"
+					EntityType="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data"></EntitySet>
+				<EntitySet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_datas"
+					EntityType="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data"></EntitySet>
+				<EntitySet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_datas"
+					EntityType="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data"></EntitySet>
+				<EntitySet Name="Things" EntityType="com.sap.appiot.Thing"></EntitySet>
+				<EntitySet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_statuss"
+					EntityType="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status"></EntitySet>
+				<EntitySet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basics" EntityType="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic"></EntitySet>
+				<AssociationSet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status"
+					Association="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_status">
+					<End EntitySet="Things" Role="ThingEntities"></End>
+					<End EntitySet="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_statuss"
+						Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_ticket_statusEntities"></End>
+				</AssociationSet>
+				<AssociationSet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data"
+					Association="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_data">
+					<End EntitySet="Things" Role="ThingEntities"></End>
+					<End EntitySet="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_datas"
+						Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_configuration_dataEntities"></End>
+				</AssociationSet>
+				<AssociationSet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic" Association="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basic">
+					<End EntitySet="Things" Role="ThingEntities"></End>
+					<End EntitySet="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basics" Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__basicEntities"></End>
+				</AssociationSet>
+				<AssociationSet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data"
+					Association="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_data">
+					<End EntitySet="Things" Role="ThingEntities"></End>
+					<End EntitySet="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_datas"
+						Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_error_dataEntities"></End>
+				</AssociationSet>
+				<AssociationSet Name="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data"
+					Association="com.sap.appiot.DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_data">
+					<End EntitySet="Things" Role="ThingEntities"></End>
+					<End EntitySet="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_datas"
+						Role="DYN_ENT_<<TenantPackageNamespace>>_<<PackageName>>__smart_bagger_telemetry_dataEntities"></End>
+				</AssociationSet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
