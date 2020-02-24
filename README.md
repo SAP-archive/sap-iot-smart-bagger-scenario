@@ -6,8 +6,6 @@ These IoT reference applications are meant to make it simpler for you to build y
 
 It features the use of SAP Leonardo IoT and a Web-based UI.
 
-
-
 ## Prerequisites
 * [SAP Cloud Platform Account](https://cloudplatform.sap.com/index.html) with a Neo sub-account and a Cloud Foundry sub-account
 * [A subscription to Leonardo IoT](https://cloudplatform.sap.com/capabilities/product-info.SAP-Leonardo-Internet-of-Things.1e3dd0d0-a355-4a0a-bc3e-36285eae4cbe.html) and an instance of [iot (service) for cloud foundry](https://help.sap.com/viewer/2f1daa938df84fd090fa2a4da6e4bc05/Cloud/en-US). **Note: These are commericial paid products.** 
@@ -20,7 +18,7 @@ It features the use of SAP Leonardo IoT and a Web-based UI.
 
 ## Installation
 
-As the source code needs to be deployed in cloud platform account, Please follow the typical approach for managing source code, [Building MTA applications](https://help.sap.com/viewer/58746c584026430a890170ac4d87d03b/Cloud/en-US/9f778dba93934a80a51166da3ec64a05.html) and [Deploying MTA applications](https://github.com/cloudfoundry-incubator/multiapps-cli-plugin#usage) to cloud platform. 
+As the source code needs to be deployed with an SAP Cloud Platform account, Please follow the typical approach for managing source code, [Building MTA applications](https://help.sap.com/viewer/58746c584026430a890170ac4d87d03b/Cloud/en-US/9f778dba93934a80a51166da3ec64a05.html) and [Deploying MTA applications](https://github.com/cloudfoundry-incubator/multiapps-cli-plugin#usage) to SAP Cloud Platform. 
 
 ## Configuration
 
