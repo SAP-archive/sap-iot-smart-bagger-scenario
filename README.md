@@ -2,7 +2,7 @@
 
 ## Description
 
-These iot reference applications are meant to make it simpler for you to build your own iot application. It walks you through all of the steps and provides you with all configuration and source code required for you to be able to reproduce the application 1:1.
+These IoT reference applications are meant to make it simpler for you to build your own iot application. It walks you through all of the steps and provides you with all configuration and source code required for you to be able to reproduce the application 1:1.
 
 It features the use of SAP Leonardo IoT and a Web-based UI.
 
@@ -28,12 +28,11 @@ We provided some example configuration in the source files that might be helpful
 
 ## Documentation
 
-We provided the complete documentation inside [docs](/docs) folder.
+We provided the complete documentation inside the [docs](/docs) folder.
 
 ## Support
 
 The content is provided "as-is". There is no guarantee that raised issues will be answered or addressed in future releases.
 
 ## License
-Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the SAP Sample Code License, v1.0 except as noted otherwise in the [LICENSE file](/LICENSE).
-
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the SAP Sample Code License, v1.0 except as noted otherwise in the [LICENSE file](/LICENSE).
