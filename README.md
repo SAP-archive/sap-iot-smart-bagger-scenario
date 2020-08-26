@@ -1,4 +1,4 @@
-# leonardo-iot-sample-scenarios
+# SAP IoT Smart Bagger Scenario
 
 ## Description
 
@@ -33,4 +33,4 @@ We provided the complete documentation inside the [docs](/docs) folder.
 The content is provided "as-is". There is no guarantee that raised issues will be answered or addressed in future releases.
 
 ## License
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE file](/LICENSE).
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE file](/LICENSE).
